@@ -1,0 +1,54 @@
+clang: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
+glimmerhmm.c:128:35: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+    fprintf(stderr,"Done %d bp\n",proclen);
+                         ~~       ^~~~~~~
+                         %ld
+glimmerhmm.c:278:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(outfilename,"%s.%d",outfile,i+1);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:180:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+glimmerhmm.c:645:116: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+        fprintf(outf,"%4d %4d  +  Initial  %10ld %10ld  %7d\n",*geneno,*exonno,curexon->start+offset,curexon->stop+offset,curexon->stop-curexon->start+1);
+                                                        ~~~                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                        %7ld
+glimmerhmm.c:664:116: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+        fprintf(outf,"%4d %4d  +  Internal %10ld %10ld  %7d\n",*geneno,*exonno,curexon->start+offset,curexon->stop+offset,curexon->stop-curexon->start+1);
+                                                        ~~~                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                        %7ld
+glimmerhmm.c:683:118: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+        fprintf(outf,"%4d %4d  +  Terminal %10ld %10ld  %7d\n\n",*geneno,*exonno,curexon->start+offset,curexon->stop+offset,curexon->stop-curexon->start+1);
+                                                        ~~~                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                        %7ld
+glimmerhmm.c:703:118: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+        fprintf(outf,"%4d %4d  +  Single   %10ld %10ld  %7d\n\n",*geneno,*exonno,curexon->start+offset,curexon->stop+offset,curexon->stop-curexon->start+1);
+                                                        ~~~                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                        %7ld
+glimmerhmm.c:722:118: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+        fprintf(outf,"%4d %4d  -  Initial  %10ld %10ld  %7d\n\n",*geneno,*exonno,curexon->start+offset,curexon->stop+offset,curexon->stop-curexon->start+1);
+                                                        ~~~                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                        %7ld
+glimmerhmm.c:743:116: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+        fprintf(outf,"%4d %4d  -  Internal %10ld %10ld  %7d\n",*geneno,*exonno,curexon->start+offset,curexon->stop+offset,curexon->stop-curexon->start+1);
+                                                        ~~~                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                        %7ld
+glimmerhmm.c:763:116: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+        fprintf(outf,"%4d %4d  -  Terminal %10ld %10ld  %7d\n",*geneno,*exonno,curexon->start+offset,curexon->stop+offset,curexon->stop-curexon->start+1);
+                                                        ~~~                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                        %7ld
+glimmerhmm.c:781:118: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+        fprintf(outf,"%4d %4d  -  Single   %10ld %10ld  %7d\n\n",*geneno,*exonno,curexon->start+offset,curexon->stop+offset,curexon->stop-curexon->start+1);
+                                                        ~~~                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                        %7ld
+10 warnings generated.
+clang: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
+In file included from graph.c:9:
+./oc1.h:4:10: fatal error: 'malloc.h' file not found
+#include <malloc.h>
+         ^~~~~~~~~~
+1 error generated.
+make: *** [graph.o] Error 1

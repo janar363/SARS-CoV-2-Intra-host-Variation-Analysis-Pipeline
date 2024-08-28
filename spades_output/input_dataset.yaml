@@ -1,0 +1,7 @@
+- "left reads":
+  - "/Users/janardhankarravula/Developer/masters/sem3-BINFO/finalProject/SRR13615939_trimmed_filtered_forward.fastq"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/Users/janardhankarravula/Developer/masters/sem3-BINFO/finalProject/SRR13615939_trimmed_filtered_reverse.fastq"
+  "type": "paired-end"

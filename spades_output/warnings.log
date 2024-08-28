@@ -1,0 +1,5 @@
+
+=== Error correction and assembling warnings:
+ * 0:00:00.006     1M / 7M    WARN    General                 (memory_limit.cpp          :  51)   Failed to limit memory to 250 Gb, setrlimit(2) call failed, errno = 22 (Invalid argument). Watch your memory consumption!
+ * 0:00:20.696     7M / 173M  WARN    General                 (launcher.cpp              : 178)   Your data seems to have high uniform coverage depth. It is strongly recommended to use --isolate option.
+======= Warnings saved to /Users/janardhankarravula/Developer/masters/sem3-BINFO/finalProject/spades_output/warnings.log

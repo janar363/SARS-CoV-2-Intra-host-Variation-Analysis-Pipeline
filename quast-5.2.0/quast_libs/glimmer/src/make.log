@@ -1,0 +1,2 @@
+g++ -g -I /usr/include/malloc -c glimmerhmm.c
+g++ -g -I /usr/include/malloc -c graph.c
